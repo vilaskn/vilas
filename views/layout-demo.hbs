@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo - {{project.name}} - vilas kn</title>
+  <link rel="icon" href="/images/fav.ico">
+  <link href="/css/demo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="demo-top">
+    <a href="/projects/{{project.alias}}">
+      <strong>« Back to Project: </strong>{{project.name}}
+    </a>
+    <span class="right">
+      <a href="#">Created by vilas kn</a>
+      <a href="/projects/{{project.alias}}">
+        <strong>» Next Demo: </strong>Test Project Name
+      </a>
+    </span>
+    <div class="clr"></div>
+  </div>
+  {{{body}}}
+  <script>
+    function resizeIframe(obj) {
+      var height = "innerHeight" in window
+        ? window.innerHeight
+        : document.documentElement.offsetHeight;
+      obj.style.height = height + 'px';
+    }
+  </script>
+</body>
+
+</html>

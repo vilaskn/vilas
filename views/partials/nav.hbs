@@ -1,0 +1,43 @@
+<nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 {{#if navHome }}active{{/if}}" href="/">
+            <img src="/images/logo.png" width="30" height="30">
+        </a>
+        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navTabs" aria-controls="navTabs" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="py-2 d-none d-md-inline-block  {{#if navProjects }}active{{/if}}" href="/projects">Projects</a>
+        <a class="py-2 d-none d-md-inline-block {{#if navBlog }}active{{/if}}" href="/blog">Blog</a>
+        <a class="py-2 d-none d-md-inline-block  {{#if navAbout }}active{{/if}}" href="/about">About</a>
+        <a class="py-2 d-none d-md-inline-block  {{#if navContact }}active{{/if}}" href="/contact">Contact</a>
+        <a class="py-2 d-none d-md-inline-block" href="/resume" target="_blank">Resume</a>
+        <a class="py-2 d-none d-md-inline-block" href="/admin">Admin</a>
+
+        <div class="collapse navbar-collapse" id="navTabs">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link {{#if navHome }}active-m{{/if}}" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{#if navProjects }}active-m{{/if}}" href="/projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{#if navBlog }}active-m{{/if}}" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{#if navAbout }}active-m{{/if}}" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{#if navContact }}active-m{{/if}}" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{#if navResume }}active-m{{/if}}" href="/resume" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

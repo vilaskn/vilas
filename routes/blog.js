@@ -4,7 +4,7 @@ var Client = require('node-rest-client').Client;
 var client = new Client();
 
 router.get('/', function (req, res, next) {
-    client.get("http://localhost:3030/blog", function (jsonData, response) {
+    client.get("http://localhost:3030/blogs", function (jsonData, response) {
         // parsed response body as js object
         console.log(jsonData);
         // raw response

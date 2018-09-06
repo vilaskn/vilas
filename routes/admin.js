@@ -154,7 +154,7 @@ router.post('/projects/:projectAlias/upload', function (req, res, next) {
   mediaService.uploadMedia(req, res, dir, pAlias + '.png', callback);
 });
 
-router.get('media/:mediaAlias/upload', function (req, res) {
+router.get('/media', function (req, res) {
   res.render('admin/upload', { 
     layout: 'layout-admin', 
     title: 'Image Upload',
@@ -165,7 +165,7 @@ router.get('media/:mediaAlias/upload', function (req, res) {
 
 
 
-  router.post('/media/:mediaAlias/upload', function (req, res,next) {
+  router.post('/media', function (req, res,next) {
   var dir = path.join(__dirname, '../public/projects/')
   
   mediaService.uploadMedia(req, res, path,alias,callback);
